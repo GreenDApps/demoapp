@@ -1,0 +1,16 @@
+quarkus:
+  http:
+    port: 8081
+  rest-client:
+    activities-api:
+      url: ${RIDB_API_URL}
+    logging:
+      scope: request-response
+      body-limit: 1000
+  log:
+    category: 
+      "org.jboss.resteasy.reactive.client.logging":
+        level: DEBUG
+
+ridb:
+  auth-key: ${RIDB_API_KEY}

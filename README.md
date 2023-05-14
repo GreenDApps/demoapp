@@ -1,0 +1,1 @@
+This application is meant to be a quick demonstration of some code with Quarkus.
